@@ -20,7 +20,7 @@ py_library(
     srcs = ["case.py"],
     srcs_version = "PY2AND3",
     deps = [
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -29,7 +29,7 @@ py_library(
     srcs = ["result.py"],
     srcs_version = "PY2AND3",
     deps = [
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -42,6 +42,6 @@ py2and3_test(
         "//absl/testing:absltest",
         "//absl/testing:xml_reporter",
         "@mock_archive//:mock",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )

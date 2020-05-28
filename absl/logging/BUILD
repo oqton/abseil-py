@@ -12,7 +12,7 @@ py_library(
     deps = [
         ":converter",
         "//absl/flags",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -47,7 +47,7 @@ py2and3_test(
         "//absl/testing:flagsaver",
         "//absl/testing:parameterized",
         "@mock_archive//:mock",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -84,7 +84,7 @@ py2py3_test_binary(
         "//absl:app",
         "//absl/flags",
         "@mock_archive//:mock",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -101,6 +101,6 @@ py2and3_test(
         "//absl/testing:_bazelize_command",
         "//absl/testing:absltest",
         "//absl/testing:parameterized",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )

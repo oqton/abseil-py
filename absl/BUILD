@@ -47,7 +47,7 @@ py_library(
     srcs = ["_enum_module.py"],
     visibility = [":__subpackages__"],
     deps = [
-        "@six_archive//:six",
+        "@six//:six",
     ] + select({
         # In some Python 3 environments, despite the _enum_module import path
         # tricks, the enum backport still ends up on sys.path before the
@@ -61,7 +61,7 @@ py_library(
     name = "_collections_abc",
     srcs = ["_collections_abc.py"],
     visibility = [":__subpackages__"],
-    deps = ["@six_archive//:six"],
+    deps = ["@six//:six"],
 )
 
 py_library(
@@ -101,7 +101,7 @@ py2and3_test(
         "//absl/testing:absltest",
         "//absl/testing:flagsaver",
         "@mock_archive//:mock",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 

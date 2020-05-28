@@ -39,7 +39,7 @@ py_library(
         "//absl/flags",
         "//absl/logging",
         "//absl/third_party/unittest3_backport",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -50,7 +50,7 @@ py_library(
     visibility = ["//visibility:public"],
     deps = [
         "//absl/flags",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -62,7 +62,7 @@ py_library(
     deps = [
         ":absltest",
         "//absl:_collections_abc",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -74,7 +74,7 @@ py_library(
     deps = [
         ":_pretty_print_reporter",
         "//absl/third_party/unittest3_backport",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -187,7 +187,7 @@ py2and3_test(
         ":absltest",
         ":parameterized",
         "//absl/flags",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -221,7 +221,7 @@ py2and3_test(
         ":absltest",
         ":parameterized",
         "//absl:_collections_abc",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -238,7 +238,7 @@ py2and3_test(
         "//absl/logging",
         "//absl/third_party/unittest3_backport",
         "@mock_archive//:mock",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 

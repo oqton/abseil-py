@@ -16,7 +16,7 @@ workspace(name = "io_abseil_py")
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 http_archive(
-    name = "six_archive",
+    name = "six",
     urls = [
         "http://mirror.bazel.build/pypi.python.org/packages/source/s/six/six-1.10.0.tar.gz",
         "https://pypi.python.org/packages/source/s/six/six-1.10.0.tar.gz",

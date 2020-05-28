@@ -17,7 +17,7 @@ py_library(
         ":_flagvalues",
         ":_helpers",
         ":_validators",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -35,7 +35,7 @@ py_library(
     srcs_version = "PY2AND3",
     deps = [
         ":_helpers",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -71,7 +71,7 @@ py_library(
         ":_exceptions",
         ":_helpers",
         "//absl:_collections_abc",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -83,7 +83,7 @@ py_library(
         ":_exceptions",
         ":_flag",
         ":_helpers",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -91,7 +91,7 @@ py_library(
     name = "_helpers",
     srcs = ["_helpers.py"],
     srcs_version = "PY2AND3",
-    deps = ["@six_archive//:six"],
+    deps = ["@six//:six"],
 )
 
 py_library(
@@ -114,7 +114,7 @@ py2and3_test(
         ":_argument_parser",
         "//absl:_enum_module",
         "//absl/testing:absltest",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -147,7 +147,7 @@ py2and3_test(
         "//absl/testing:absltest",
         "//absl/testing:parameterized",
         "@mock_archive//:mock",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -192,7 +192,7 @@ py2and3_test(
         "//absl/testing:absltest",
         "//absl/testing:parameterized",
         "@mock_archive//:mock",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -232,7 +232,7 @@ py2and3_test(
         ":tests/module_bar",
         "//absl:_enum_module",
         "//absl/testing:absltest",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
@@ -263,7 +263,7 @@ py2and3_test(
         ":tests/module_foo",
         "//absl:_enum_module",
         "//absl/testing:absltest",
-        "@six_archive//:six",
+        "@six//:six",
     ],
 )
 
